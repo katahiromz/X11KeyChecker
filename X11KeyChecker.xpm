@@ -1,5 +1,5 @@
 /* XPM */
-static const char * TypicalX11App_xpm[] = {
+static const char * X11KeyChecker_xpm[] = {
 "64 64 107 2",
 "  	c None",
 ". 	c #000000",

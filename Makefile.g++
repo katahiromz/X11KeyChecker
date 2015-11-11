@@ -10,18 +10,18 @@ DEF1 = -O3 -DNDEBUG
 CXX = g++
 CXXFLAGS = -m32 -std=c++11 -pedantic -Wall $(DEF1)
 
-PROGRAM = TypicalX11App$(DOTEXE)
-OBJS = TypicalX11App$(DOTOBJ)
+PROGRAM = X11KeyChecker$(DOTEXE)
+OBJS = X11KeyChecker$(DOTOBJ)
 LIBS = -lX11 -lXpm
 
-all: TypicalX11App$(DOTEXE)
+all: X11KeyChecker$(DOTEXE)
 
-TypicalX11App$(DOTEXE): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o TypicalX11App$(DOTEXE) $(OBJS) $(LIBS)
-	chmod +x TypicalX11App$(DOTEXE)
+X11KeyChecker$(DOTEXE): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o X11KeyChecker$(DOTEXE) $(OBJS) $(LIBS)
+	chmod +x X11KeyChecker$(DOTEXE)
 
-TypicalX11App$(DOTOBJ): TypicalX11App.h TypicalX11App.cpp TypicalX11App.xpm
-	$(CXX) -c $(CXXFLAGS) -o TypicalX11App$(DOTOBJ) TypicalX11App.cpp
+X11KeyChecker$(DOTOBJ): X11KeyChecker.h X11KeyChecker.cpp X11KeyChecker.xpm
+	$(CXX) -c $(CXXFLAGS) -o X11KeyChecker$(DOTOBJ) X11KeyChecker.cpp
 
 clean:
 	rm -f *.o
