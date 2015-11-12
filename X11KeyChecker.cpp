@@ -833,12 +833,12 @@ struct X11App {
         case XK_Shift_L:
         case XK_Shift_R:
             m_shift_pressed = false;
-            puts("Shift key released");
+            //puts("Shift key released");
             break;
         case XK_Control_L:
         case XK_Control_R:
             m_ctrl_pressed = false;
-            puts("Ctrl key released");
+            //puts("Ctrl key released");
             break;
         default:
             break;
