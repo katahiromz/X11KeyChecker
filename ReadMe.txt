@@ -1,4 +1,4 @@
-This is a template project of X11 application.
+This is a X11 key checker.
 
 /////////////////////////////////////////////////////
 // Katayama Hirofumi MZ (katahiromz) [ARMYANT]
